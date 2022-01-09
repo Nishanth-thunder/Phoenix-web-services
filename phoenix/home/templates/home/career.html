@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phoenix</title>
+<link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+
+</head>
+<body>
+
+
+<center>
+<h1>Phoenix web developers</h1>
+
+    <div class="card border-warning mb-3" style="max-width: 50rem;">
+  <div class="card-body">
+    <h3 class="card-text" style="color:red">Welcome to Phoenix dev  !!</h3>
+  </div>
+</div>
+<br>
+    <h3 class="text-success" >Do you wish to work with us? Do you want to explore web development?<br>
+        Than why wait...Just fill the form
+    and relax...our team will contact you!</h3>
+    <br>
+    <h2><u>Registration form</u></h2>
+<form action='success/' method="post">
+    {% csrf_token %}
+<table>
+        <tr>
+            <td align="right"> <label style="color:white"><b>Enter your name: </b></label></td>
+            <td align="left"><input type="text"  name="name" required></td>
+        </tr>
+        <tr>
+            <td align="right"><label style="color:white"><b>role:</b> </label></td>
+            <td align="left"><input type="text"  name="role" required></td>
+        </tr>
+        <tr>
+        <td align="right"><label style="color:white"><b>Age: </b></label></td>
+        <td align="left"><input type="number" name="age" required></td>
+        </tr>
+
+        <tr>
+            <td align="right"> <label style="color:white"><b>location: </b></label></td>
+            <td align="left"><input type="text"  name="location" required></td>
+        </tr>
+        <tr>
+            <td align="right"><label style="color:white"><b>experience</b> </label></td>
+            <td align="left"><input type="number"  name="experience" required></td>
+        </tr>
+        <tr>
+        <td align="right"><label style="color:white"><b>job role(Wish): </b></label></td>
+        <td align="left"><input type="text" name="jobrole" required></td>
+        </tr>
+        <tr>
+            <td align="right"> <label style="color:white"><b>class12 percentage: </b></label></td>
+            <td align="left"><input type="text"  name="class12" required></td>
+        </tr>
+        <tr>
+            <td align="right"><label style="color:white"><b>CGPA(in percentage):</b> </label></td>
+            <td align="left"><input type="text"  name="cgpa" required></td>
+        </tr>
+        <tr>
+        <td align="right"><label style="color:white"><b>Email: </b></label></td>
+        <td align="left"><input type="email" name="email" required></td>
+        </tr>
+<tr>
+            <td align="right"><button type="submit" class="btn btn-danger">Submit</button></td>
+        </tr>
+    </table>
+
+
+
+
+    </center>
+</body>
+</html>
